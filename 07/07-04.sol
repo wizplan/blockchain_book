@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract Integers {
     // 3 / 2는 반올림해서 1입니다. 1 * 2를 계산해 2를 리턴합니다.

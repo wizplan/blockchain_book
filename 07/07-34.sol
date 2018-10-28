@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract Sharer {
     function sendHalf(address addr) public payable returns (uint balance) {

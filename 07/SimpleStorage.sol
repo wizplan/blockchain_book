@@ -1,5 +1,5 @@
 // 컴파일러 버전 지정
-pragma solidity ^0.4.24; // ①
+pragma solidity ^0.4.25; // ①
 
 // 계약 선언
 contract SimpleStorage {

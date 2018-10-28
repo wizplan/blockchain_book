@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract OutputParams {
     function arithmetics(uint _a, uint _b) public pure returns (uint o_sum, uint o_product) {

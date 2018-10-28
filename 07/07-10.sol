@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract DataLocation {
     // 지역 변수 선언이므로 기본 데이터 위치 타입은 storage입니다.

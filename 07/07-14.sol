@@ -1,5 +1,5 @@
 // 예제는 컴파일할 수 없습니다.
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract ArrayLiteralsNotCompiled {
     function f() public pure {
