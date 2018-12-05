@@ -1,6 +1,6 @@
 # 181205 변경 사항 정리
-### 259p 8.2.3 토큰의 스마트 계약 생성
-오픈 제플린이 2.0으로 업데이트되면서 변화가 생겼습니다. ERC20 계약 관련 파일들의 구조가 바뀌어서 생긴 것입니다. [여기](https://github.com/wizplan/blockchain_book/tree/master/changelog/181205/change259-261.md)를 참고해주세요. 해당 코드도 같이 업데이트 했습니다.
+#### 259p 8.2.3 토큰의 스마트 계약 생성
+오픈 제플린이 2.0으로 업데이트되면서 변화가 생겼습니다. ERC20 계약 관련 파일들의 구조가 바뀌어서 생긴 것입니다. [여기](https://github.com/wizplan/blockchain_book/tree/master/changelog/181205/change259_261.md)를 참고해주세요. 해당 코드도 같이 업데이트 했습니다.
 
 #### 265p 코드 8-10 port 부분과 아래 문장
 port: **9545**, -> port: **8545**,  
@@ -18,8 +18,8 @@ port: **9545**, -> port: **8545**,
 
 (이유는 265p 변경 사항에서 이야기한 것과 같은 내용입니다.)
 
-## 276p 중간 문단 변경
-259p 오픈 제플린 2.0 업데이트에 따라 같이 변화가 생긴 부분입니다. [여기](https://github.com/wizplan/blockchain_book/tree/master/changelog/181205/change276-277.md)를 참고해주세요. 해당 코드도 같이 업데이트 했습니다.
+#### 276p 중간 문단 변경
+259p 오픈 제플린 2.0 업데이트에 따라 같이 변화가 생긴 부분입니다. [여기](https://github.com/wizplan/blockchain_book/tree/master/changelog/181205/change276_277.md)를 참고해주세요. 해당 코드도 같이 업데이트 했습니다.
 
 #### 277p 마지막 문단 토큰 등록 관련
 그림은 [여기](https://github.com/wizplan/blockchain_book/tree/master/changelog/181205/img)에서 확인할 수 있습니다. 흐름에 따라 013, 014의 숫자를 넣었고 고해상도 파일이라 굳이 링크는 넣지 않았습니다. 본문 흐름과 맞춰서 보면 충분히 이해할 수 있을 겁니다.
@@ -27,7 +27,7 @@ port: **9545**, -> port: **8545**,
 # 2쇄 주요 변경 사항 정리
 
 #### 189p 첫 번째 문단 두 번째 줄(2쇄 반영)
-바로 아래 드롭다운 메뉴에 **[SimpleStorage.sol]**이라고 표시 -> 바로 아래 드롭다운 메뉴에 **[SimpleStorage]**이라고 표시  
+바로 아래 드롭다운 메뉴에 [**SimpleStorage.sol**]이라고 표시 -> 바로 아래 드롭다운 메뉴에 [**SimpleStorage**]이라고 표시  
 (Remix IDE 변경 사항 반영)
 
 #### 189p 마지막 줄
