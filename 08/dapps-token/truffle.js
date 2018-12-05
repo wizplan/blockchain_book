@@ -6,7 +6,7 @@ module.exports = {
     networks: {
         development: {
             host: "localhost",
-            port: 9545,
+            port: 8545,
             network_id: "10"
         },
         ropsten: {
@@ -16,7 +16,7 @@ module.exports = {
                     "https://ropsten.infura.io/" + accessToken
                 );
             },
-            network_id: 3,
+            network_id: "3",
             gas: 500000
         }
     }
