@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Arrays {
     // 고정 배열
@@ -17,7 +17,7 @@ contract Arrays {
         return res;
     }
 
-    function getDArray() public returns (uint[]) {
+    function getDArray() public returns (uint[] memory) {
         dArray.push(2);
         dArray.push(3);
         return dArray;

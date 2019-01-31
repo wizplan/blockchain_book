@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract ArrayContract {
     uint[2 ** 20] m_aLotOfIntegers;
@@ -7,7 +7,7 @@ contract ArrayContract {
     bool[2][] m_pairsOfFlags;
 
     // newPairs는 memory 타입 배열입니다.
-    function setAllFlagPairs(bool[2][] newPairs) public {
+    function setAllFlagPairs(bool[2][] memory newPairs) public {
         // storage 타입 배열을 고정 배열로 덮어씁니다.
         m_pairsOfFlags = newPairs;
     }
@@ -34,19 +34,19 @@ contract ArrayContract {
 
     bytes m_byteData;
 
-    function byteArrays(bytes data) public {
+    function byteArrays(bytes memory data) public {
         // bytes는 uint8[]와 같습니다.
         m_byteData = data;
         m_byteData.length += 7;
-        m_byteData[3] = byte(8);
+        m_byteData[3] = 0x08;
         delete m_byteData[2];
     }
 
-    function addFlag(bool[2] flag) public returns (uint) {
+    function addFlag(bool[2] memory flag) public returns (uint) {
         return m_pairsOfFlags.push(flag);
     }
 
-    function createMemoryArray(uint size) public pure returns (bytes) {
+    function createMemoryArray(uint size) public pure returns (bytes memory) {
         // memory 타입 동적 배열은 new 키워드로 만듭니다.
         uint[2][] memory arrayOfPairs = new uint[2][](size);
         arrayOfPairs[2][size]= 3;
@@ -55,7 +55,7 @@ contract ArrayContract {
         bytes memory b = new bytes(200);
 
         for (uint i = 0; i < b.length; i++)
-            b[i] = byte(i);
+            b[i] = byte(uint8(i));
 
         return b;
     }

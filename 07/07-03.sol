@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 // 계약 선언
 contract Booleans {

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Integers {
     // 3 / 2는 반올림해서 1입니다. 1 * 2를 계산해 2를 리턴합니다.
@@ -18,9 +18,9 @@ contract Integers {
         return 3 / 0;
     } */
 
-    function shift() public pure returns(uint[2]) {
+    function shift() public pure returns(uint[2] memory) {
         uint[2] memory a;
-
+        
         // 16 * 2 ** 2 = 64
         a[0] = 16 << 2;
 

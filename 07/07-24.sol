@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract OutputWithReturn {
     // 여러 값을 return으로 리턴합니다.

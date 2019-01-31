@@ -1,5 +1,5 @@
 // 컴파일러 버전 지정
-pragma solidity ^0.4.25; // ①
+pragma solidity >=0.4.22 <0.6.0; // ①
 
 // 계약 선언
 contract SimpleStorage {
@@ -12,7 +12,7 @@ contract SimpleStorage {
     }
 
     // storedData 값 반환 ④
-    function get() public constant returns (uint) {
+    function get() public view returns (uint) {
         return storedData;
     }
 }

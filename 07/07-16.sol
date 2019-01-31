@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Structs {
     struct User {
@@ -8,11 +8,11 @@ contract Structs {
 
     User[] public users;
 
-    function addUser(string _name, string _email) public {
+    function addUser(string memory _name, string memory _email) public {
         users.push(User(_name, _email));
     }
 
-    function getUser(uint _id) public view returns (string, string) {
+    function getUser(uint _id) public view returns (string memory, string memory) {
         // User storage u = users[_id];
         // u.name = "changed";
         return (users[_id].name, users[_id].email);

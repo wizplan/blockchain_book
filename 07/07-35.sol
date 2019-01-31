@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract SimpleStorageOwner {
     uint public storedData;
@@ -28,7 +28,7 @@ contract SimpleStorageOwner {
     }
 
     // ④ storedData 값 반환
-    function get() onlyOwner public constant returns (uint) {
+    function get() onlyOwner public view returns (uint) {
         return storedData;
     }
 }

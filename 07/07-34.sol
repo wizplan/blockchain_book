@@ -1,7 +1,7 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Sharer {
-    function sendHalf(address addr) public payable returns (uint balance) {
+    function sendHalf(address payable addr) public payable returns (uint balance) {
         // 2로 나눌 수 있는 금액만 사용할 수 있습니다.
         require(msg.value % 2 == 0);
         uint balanceBeforeTransfer = address(0).balance;

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract InternalFunctionCalls {
     // g() 함수에서 f() 함수를 호출합니다.

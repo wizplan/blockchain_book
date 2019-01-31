@@ -1,11 +1,11 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract DataLocation {
     // 지역 변수 선언이므로 기본 데이터 위치 타입은 storage입니다.
     uint[] x;
 
     // memoryArray는 함수 안에서 사용하므로 기본 데이터 위치 타입은 memory입니다.
-    function f(uint[] memoryArray) public {
+    function f(uint[] memory memoryArray) public {
         // storage 타입의 memoryArray를 복사합니다.
         x = memoryArray;
 

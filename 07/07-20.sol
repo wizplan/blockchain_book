@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract ConversionTruncate {
     function f() public pure returns (uint16) {

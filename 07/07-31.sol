@@ -1,4 +1,4 @@
-pragma solidity ^0.4.25;
+pragma solidity >=0.4.22 <0.6.0;
 
 contract Assignment {
     uint[] data;
@@ -24,10 +24,10 @@ contract Assignment {
 
         // length에 7을 넣습니다.
         // 튜플의 마지막이 빈 값이면 나머지 값은 무시합니다.
-        (data.length, ) = f();
+        (data.length, ,) = f();
 
         // 튜플의 첫 값이 비어 있으면 해당 값만 무시합니다.
         // data[3]에 2를 넣습니다.
-        (, data[3]) = f();
+        (, , data[3]) = f();
     }
 }
